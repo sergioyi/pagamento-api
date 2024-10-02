@@ -6,16 +6,16 @@
 
 ✅3) Este microserviço 2 deverá postar uma mensagem em um tópico de mensageria (Ex. AWS SQS ou Rabbit MQ) 
 
-🚨4) Ambos os serviços deverão ter um Dockerfile ou docker-compose e um arquivo README explicando como subir os serviços 
+✅4) Ambos os serviços deverão ter um Dockerfile ou docker-compose e um arquivo README explicando como subir os serviços 
 
 #   explicando como subir os serviços
 Instalando uma imagem RabbitMQ do dockerhub:
 ```shell
-sudo docker pull rabbitmq:3-management
+sudo docker pull rabbitmq:4.0.2
 ```
 Criando e executando um container:
 ```shell
-sudo docker run -d --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management
+sudo docker run -d --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:4.0.2
 ```
 \
 Buscando o host do container para configurações dos microserviços 1 e 2, custuma ter 11 números:

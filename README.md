@@ -36,7 +36,10 @@ cd microservico2
 sudo docker build -t microservico2-docker .
 sudo docker run -d -p 8081:8081 microservico2-docker
 ```
+## Usando a API
+http://localhost:8080/swagger-ui/swagger-ui/index.html
 
+Ele espera um valor double.
 ## Acessando o RabbitMQ
 Para acessar o ambiente do RabbitMq:  http://localhost:15672/ onde vai pedir usuário e senha \
 Senha: `guest`\

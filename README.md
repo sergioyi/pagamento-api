@@ -11,11 +11,9 @@
 #   explicando como subir os serviços
 Instalando uma imagem RabbitMQ do dockerhub:
 ```shell
-sudo docker pull rabbitmq:4.0.2
-```
-Criando e executando um container:
-```shell
-sudo docker run -d --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:4.0.2
+docker pull rabbitmq:management
+docker run -d --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:management
+
 ```
 \
 Buscando o host do container para configurações dos microserviços 1 e 2, custuma ter 11 números:
